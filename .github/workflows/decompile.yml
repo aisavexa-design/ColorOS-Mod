@@ -1,0 +1,47 @@
+name: Decompile APK using Apktool
+
+on:
+  workflow_dispatch:
+    inputs:
+      apk_name:
+        description: 'Apne APK file ka naam likhein (e.g., launcher.apk)'
+        required: true
+        default: 'launcher.apk'
+
+permissions:
+  contents: write
+
+jobs:
+  decompile:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: Install Apktool
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y apktool
+
+      - name: Decompile APK
+        run: |
+          echo "Decompiling ${{ github.event.inputs.apk_name }}..."
+          # '-f' purani files overwrite karne ke liye hai, '-o' output folder hai
+          apktool d -f ${{ github.event.inputs.apk_name }} -o decompiled_source
+          
+      - name: Commit and Push Decompiled Files
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          
+          # Sirf decompiled folder ko add karein
+          git add decompiled_source/
+          
+          # Agar koi changes hain toh commit aur push karein
+          if git diff-index --quiet HEAD; then
+            echo "Koi nayi file generate nahi hui."
+          else
+            git commit -m "Auto-decompiled ${{ github.event.inputs.apk_name }} via Apktool"
+            git push
+          fi
