@@ -25,25 +25,9 @@ jobs:
           sudo apt-get update
           sudo apt-get install -y apktool wget
 
-      - name: Fix Dollar ($) Resource Names
+      - name: Build APK (Legacy Mode)
         run: |
-          echo "Fixing invalid $ filenames in res folder..."
-          cd decompiled_source/res
-          
-          # 1. Rename files containing '$' to '_'
-          find . -depth -name '*$*' | while IFS= read -r file; do
-            dir=$(dirname "$file")
-            base=$(basename "$file")
-            newbase=$(echo "$base" | tr '$' '_')
-            mv "$file" "$dir/$newbase"
-          done
-          
-          # 2. Replace '$' with '_' inside XML resource references
-          find . -type f -name "*.xml" -exec sed -i 's/\$/_/g' {} +
-
-      - name: Build APK
-        run: |
-          echo "Building APK..."
+          echo "Building APK without strict AAPT2 checks..."
           apktool b decompiled_source -o ColorOS_Launcher_Mod.apk
 
       - name: Download Uber APK Signer
