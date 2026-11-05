@@ -25,9 +25,14 @@ jobs:
           sudo apt-get update
           sudo apt-get install -y apktool wget
 
+      - name: Remove Problematic Native Libs
+        run: |
+          echo "Removing conflicting native libs to prevent compile errors..."
+          rm -rf decompiled_source/lib/
+
       - name: Build APK (Legacy Mode)
         run: |
-          echo "Building APK without strict AAPT2 checks..."
+          echo "Building APK..."
           apktool b decompiled_source -o ColorOS_Launcher_Mod.apk
 
       - name: Download Uber APK Signer
