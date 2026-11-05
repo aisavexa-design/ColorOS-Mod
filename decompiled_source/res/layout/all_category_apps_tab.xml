@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.android.launcher3.allapps.OplusAllAppCategoryTabView android:gravity="center" android:id="@id/category_tab" android:clipChildren="false" android:clipToPadding="false" android:layout_width="wrap_content" android:layout_centerHorizontal="true" android:layout_centerVertical="true" app:UnSelectedTextColor="@color/all_apps_tab_unselected_text" app:segmentButtonTextSize="@dimen/floating_tab_view_item_text_size" app:selectedTextColor="@color/all_apps_tab_selected_text" style="@style/SegmentButton.Tiny"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" />

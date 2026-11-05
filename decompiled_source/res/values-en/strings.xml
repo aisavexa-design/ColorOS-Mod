@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="coui_chip_count_format">total %s</string>
+    <string name="coui_chip_count_separator">，</string>
+    <string name="coui_chip_tab_position_in_group">第 %1$d 个，共 %2$d 个</string>
+    <string name="coui_chip_tab_unit">page</string>
+</resources>

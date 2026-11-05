@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:id="@id/card_container" android:background="@drawable/fallback_card_bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/fallback_text_container" android:layout_width="wrap_content" android:layout_height="wrap_content" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent">
+        <TextView android:textColor="@color/black_90" android:gravity="center" android:id="@id/tv_fallback_card_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/card_ui_not_network" android:fontFamily="sans-serif-medium" />
+        <TextView android:textColor="@color/card_fallback_blue_text" android:gravity="center" android:id="@id/tv_fallback_card_content" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/card_ui_set_up_network" android:fontFamily="sans-serif-medium" />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

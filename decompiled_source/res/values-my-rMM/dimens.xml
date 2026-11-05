@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="card_xiaobu_name_padding_top">0.5dip</dimen>
+    <dimen name="coui_appbar_title_expanded_margin_top">56.0dip</dimen>
+</resources>

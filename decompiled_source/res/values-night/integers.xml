@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item type="integer" name="coui_backgroundDimAmount">0.5</item>
+    <integer name="coui_shadow_color_lv1">60</integer>
+    <integer name="coui_shadow_color_lv2">50</integer>
+    <integer name="coui_shadow_color_lv3a">68</integer>
+    <integer name="coui_shadow_color_lv3b">120</integer>
+    <integer name="coui_shadow_color_lv4">150</integer>
+    <integer name="coui_shadow_color_lv5">140</integer>
+</resources>

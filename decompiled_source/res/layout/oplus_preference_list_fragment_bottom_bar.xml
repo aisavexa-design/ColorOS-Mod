@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout android:background="@color/coui_color_background_with_card" android:fitsSystemWindows="false" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" app:layout_behavior="@string/coui_floating_scrolling_view_behavior">
+        <com.coui.appcompat.grid.COUIPercentWidthFrameLayout android:layout_gravity="center_horizontal" android:id="@android:id/list_container" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" app:gridNumber="@integer/grid_guide_column_preference" app:paddingType="listType" app:percentMode="reMeasureMode" app:underParent="true" />
+        <include layout="@layout/bottom_single_button_bar" />
+    </LinearLayout>
+    <com.coui.appcompat.toolbar.AppBarBlurOverlayView android:id="@id/blur_overlay" android:layout_width="fill_parent" android:layout_height="0.0dip" app:layout_behavior="com.coui.appcompat.toolbar.AppBarBlurOverlayBehavior" />
+    <include layout="@layout/appbar_with_divider_layout" />
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

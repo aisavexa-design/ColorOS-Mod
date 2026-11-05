@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:clipChildren="false" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="@dimen/all_apps_category_tab_layout_height" android:layout_marginTop="@dimen/all_apps_category_tab_margin_top" android:layout_alignParentTop="true" android:translationZ="10.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <include layout="@layout/all_category_apps_tab" />
+    </RelativeLayout>
+    <ImageView android:id="@id/all_apps_menu" android:focusable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/coui_toolbar_menu_icon_more" android:tint="@color/coui_color_white" android:layout_centerVertical="true" android:contentDescription="@string/drawer_app_sort_sort" android:layout_marginEnd="@dimen/oplus_taskbar_allapps_sort_pop_margin_end" android:layout_alignParentEnd="true" android:paddingHorizontal="@dimen/oplus_taskbar_allapps_sort_pop_padding" />
+</RelativeLayout>

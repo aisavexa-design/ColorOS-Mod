@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.coui.appcompat.cardlist.COUICardListSelectedItemLayout android:gravity="center_horizontal" android:layout_gravity="bottom" android:orientation="vertical" android:paddingTop="@dimen/dp_32" android:paddingBottom="@dimen/common_margin" android:clipChildren="false" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingStart="@dimen/support_preference_title_padding_start" android:paddingEnd="@dimen/support_preference_title_padding_end"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.oplus.anim.EffectiveAnimationView android:layout_gravity="center_horizontal" android:id="@id/color_ep_guide_animation" android:layout_width="fill_parent" android:layout_height="@dimen/launcher_model_anim_height" android:scaleType="fitCenter" android:adjustViewBounds="true" android:forceDarkAllowed="false" />
+    <TextView android:textSize="@dimen/mode_common_tips_size" android:textColor="@color/coui_color_label_secondary" android:clickable="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_24" android:text="@string/launcher_icon_fallen_tip" android:lineSpacingMultiplier="1.2" />
+</com.coui.appcompat.cardlist.COUICardListSelectedItemLayout>

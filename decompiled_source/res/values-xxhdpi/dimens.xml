@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="folder_padding_top">43.0dip</dimen>
+    <dimen name="mode_image_height">546.0px</dimen>
+    <dimen name="coui_search_linear_divider_width">1.0dip</dimen>
+</resources>

@@ -1,0 +1,222 @@
+.class public final Lcom/support/touchsearchview/R$styleable;
+.super Ljava/lang/Object;
+
+
+# static fields
+.field public static COUITouchSearchView:[I = null
+
+.field public static COUITouchSearchView_couiAdaptiveVibrator:I = 0x0
+
+.field public static COUITouchSearchView_couiBackgroundAlignMode:I = 0x1
+
+.field public static COUITouchSearchView_couiFirstIsCharacter:I = 0x2
+
+.field public static COUITouchSearchView_couiFirstMarginTop:I = 0x3
+
+.field public static COUITouchSearchView_couiKeyBackground:I = 0x4
+
+.field public static COUITouchSearchView_couiKeyCollect:I = 0x5
+
+.field public static COUITouchSearchView_couiKeyTextColor:I = 0x6
+
+.field public static COUITouchSearchView_couiKeyTextSize:I = 0x7
+
+.field public static COUITouchSearchView_couiMarginLeft:I = 0x8
+
+.field public static COUITouchSearchView_couiMarginRigh:I = 0x9
+
+.field public static COUITouchSearchView_couiPopupCollect:I = 0xa
+
+.field public static COUITouchSearchView_couiPopupWinFirstHeight:I = 0xb
+
+.field public static COUITouchSearchView_couiPopupWinFirstTextColor:I = 0xc
+
+.field public static COUITouchSearchView_couiPopupWinFirstTextSize:I = 0xd
+
+.field public static COUITouchSearchView_couiPopupWinFirstWidth:I = 0xe
+
+.field public static COUITouchSearchView_couiPopupWinMinTop:I = 0xf
+
+.field public static COUITouchSearchView_couiPopupWinSecondHeight:I = 0x10
+
+.field public static COUITouchSearchView_couiPopupWinSecondMargin:I = 0x11
+
+.field public static COUITouchSearchView_couiPopupWinSecondOffset:I = 0x12
+
+.field public static COUITouchSearchView_couiPopupWinSecondTextSize:I = 0x13
+
+.field public static COUITouchSearchView_couiPopupWinSecondWidth:I = 0x14
+
+.field public static COUITouchSearchView_couiTouchSearchVibrateLevel:I = 0x15
+
+.field public static COUITouchSearchView_couiTouchWell:I = 0x16
+
+.field public static COUITouchSearchView_couiUnionEnable:I = 0x17
+
+.field public static ViewDrawableStates:[I = null
+
+.field public static ViewDrawableStates_android_state_accelerated:I = 0x6
+
+.field public static ViewDrawableStates_android_state_activated:I = 0x5
+
+.field public static ViewDrawableStates_android_state_drag_can_accept:I = 0x8
+
+.field public static ViewDrawableStates_android_state_drag_hovered:I = 0x9
+
+.field public static ViewDrawableStates_android_state_enabled:I = 0x2
+
+.field public static ViewDrawableStates_android_state_focused:I = 0x0
+
+.field public static ViewDrawableStates_android_state_hovered:I = 0x7
+
+.field public static ViewDrawableStates_android_state_pressed:I = 0x4
+
+.field public static ViewDrawableStates_android_state_selected:I = 0x3
+
+.field public static ViewDrawableStates_android_state_window_focused:I = 0x1
+
+
+# direct methods
+.method public static constructor <clinit>()V
+    .locals 1
+
+    .line 1
+    const/16 v0, 0x18
+
+    .line 2
+    .line 3
+    new-array v0, v0, [I
+
+    .line 4
+    .line 5
+    fill-array-data v0, :array_0
+
+    .line 6
+    .line 7
+    .line 8
+    sput-object v0, Lcom/support/touchsearchview/R$styleable;->COUITouchSearchView:[I
+
+    .line 9
+    .line 10
+    const/16 v0, 0xa
+
+    .line 11
+    .line 12
+    new-array v0, v0, [I
+
+    .line 13
+    .line 14
+    fill-array-data v0, :array_1
+
+    .line 15
+    .line 16
+    .line 17
+    sput-object v0, Lcom/support/touchsearchview/R$styleable;->ViewDrawableStates:[I
+
+    .line 18
+    .line 19
+    return-void
+
+    .line 20
+    nop
+
+    .line 21
+    :array_0
+    .array-data 4
+        0x7f040238
+        0x7f040242
+        0x7f04031e
+        0x7f04031f
+        0x7f040369
+        0x7f04036a
+        0x7f04036b
+        0x7f04036c
+        0x7f04038a
+        0x7f04038b
+        0x7f0403c1
+        0x7f0403c5
+        0x7f0403c6
+        0x7f0403c7
+        0x7f0403c8
+        0x7f0403c9
+        0x7f0403ca
+        0x7f0403cb
+        0x7f0403cc
+        0x7f0403cd
+        0x7f0403ce
+        0x7f0404e0
+        0x7f0404e2
+        0x7f0404e5
+    .end array-data
+
+    .line 22
+    .line 23
+    .line 24
+    .line 25
+    .line 26
+    .line 27
+    .line 28
+    .line 29
+    .line 30
+    .line 31
+    .line 32
+    .line 33
+    .line 34
+    .line 35
+    :array_1
+    .array-data 4
+        0x101009c
+        0x101009d
+        0x101009e
+        0x10100a1
+        0x10100a7
+        0x10102fe
+        0x101031b
+        0x1010367
+        0x1010368
+        0x1010369
+    .end array-data
+.end method
+
+.method private constructor <init>()V
+    .locals 0
+
+    .line 1
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    .line 2
+    .line 3
+    .line 4
+    return-void
+    .line 5
+    .line 6
+    .line 7
+    .line 8
+    .line 9
+    .line 10
+    .line 11
+    .line 12
+    .line 13
+    .line 14
+    .line 15
+    .line 16
+    .line 17
+    .line 18
+    .line 19
+    .line 20
+    .line 21
+    .line 22
+    .line 23
+    .line 24
+    .line 25
+    .line 26
+    .line 27
+    .line 28
+    .line 29
+    .line 30
+    .line 31
+    .line 32
+    .line 33
+    .line 34
+    .line 35
+.end method

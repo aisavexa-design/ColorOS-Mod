@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape android:shape="rectangle"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <corners android:topLeftRadius="?couiRoundCornerXXXXLRadius" android:topRightRadius="?couiRoundCornerXXXXLRadius" />
+    <smooth-weight android:gradientRadius="@dimen/coui_round_corner_xxxxl_weight" />
+</shape>

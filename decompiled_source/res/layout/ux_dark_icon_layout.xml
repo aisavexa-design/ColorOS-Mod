@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/dark_layout" android:clipChildren="false" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/dark_layout1" android:background="@drawable/coui_list_selector_background" android:clipChildren="false" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="57.0dip">
+        <TextView android:textSize="16.0sp" android:textColor="@color/ux_txt_black" android:ellipsize="end" android:id="@id/dark_text" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/title_dark_mode" android:maxLines="2" android:layout_weight="1.5" android:fontFamily="sans-serif-medium" android:textDirection="locale" android:paddingEnd="6.0dip" />
+        <TextView android:gravity="center|right" android:id="@id/dark_select" android:focusable="false" android:clickable="false" android:layout_width="0.0dip" android:layout_height="wrap_content" android:maxWidth="@dimen/coui_preference_status_text_max_width" android:text="@string/dark_mode_always_light" android:layout_weight="1.0" app:drawableEndCompat="@drawable/coui_pop_up_next" style="@style/PreferenceStatusText.Tiny" />
+    </LinearLayout>
+    <View android:id="@id/dark_line" android:background="@color/ux_oplus_preference_divider" android:layout_width="fill_parent" android:layout_height="0.33000004dip" android:layout_marginTop="1.0dip" android:layout_marginHorizontal="@dimen/ux_panel_margin_horizontal" android:forceDarkAllowed="false" />
+</LinearLayout>

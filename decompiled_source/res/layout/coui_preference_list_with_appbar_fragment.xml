@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:id="@android:id/list_container" android:layout_width="fill_parent" android:layout_height="fill_parent" app:layout_behavior="@string/coui_floating_scrolling_view_behavior" />
+    <TextView android:gravity="center" android:id="@android:id/empty" android:padding="8.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <com.coui.appcompat.toolbar.AppBarBlurOverlayView android:id="@id/blur_overlay" android:layout_width="fill_parent" android:layout_height="0.0dip" app:layout_behavior="com.coui.appcompat.toolbar.AppBarBlurOverlayBehavior" app:scrollDrivenAlphaEnabled="true" />
+    <com.google.android.material.appbar.COUIDividerAppBarLayout android:id="@id/appbar_layout" android:background="@drawable/coui_window_bg_with_card" android:layout_width="fill_parent" android:layout_height="wrap_content" app:elevation="0.0dip">
+        <com.coui.appcompat.toolbar.COUIToolbar android:id="@id/toolbar" android:layout_width="fill_parent" app:supportTitleTextAppearance="@style/textAppearanceSecondTitle" style="@style/COUIToolBarInAppBarLayoutStyle" />
+    </com.google.android.material.appbar.COUIDividerAppBarLayout>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<filter-conf>
+    <version>2026032011</version>
+    <isOpen>1</isOpen>
+    <filter-name>can_add_icon_to_launcher_app_list</filter-name>
+
+    <string-array name="can_add_icon_to_launcher_pkg">
+         <ShortcutKey packageName = "com.heytap.speechassist" shortcutId = "PIN_SHORTCUT_ID_BREENO"/> <!--动态小布助手-->
+         <ShortcutKey packageName = "com.heytap.speechassist" shortcutId = "SHORTCUT_ID_BREENO"/> <!--静态小布助手-->
+         <ShortcutKey packageName = "com.coloros.phonemanager" shortcutId = "com.oplus.phonemanager.pin_shortcut"/><!--手机管家-->
+         <ShortcutKey packageName = "com.heytap.cloud" shortcutId = "com.heytap.cloud"/><!--云服务-->
+         <ShortcutKey packageName = "com.oplus.aimemory" shortcutId = "com.oplus.aimemory"/><!--静态小布记忆-->
+         <ShortcutKey packageName = "com.oplus.aimemory" shortcutId = "com.oplus.aimemory_dynamic"/><!--动态小布记忆-->
+    </string-array>
+
+    <disable_add_icon_to_launcher>0</disable_add_icon_to_launcher>
+</filter-conf>

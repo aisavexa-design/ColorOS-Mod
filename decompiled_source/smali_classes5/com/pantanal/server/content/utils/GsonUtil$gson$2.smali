@@ -1,0 +1,201 @@
+.class final Lcom/pantanal/server/content/utils/GsonUtil$gson$2;
+.super Lkotlin/jvm/internal/Lambda;
+.source "GsonUtil.kt"
+
+# interfaces
+.implements Lkotlin/jvm/functions/Function0;
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Lcom/pantanal/server/content/utils/GsonUtil;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x19
+    name = null
+.end annotation
+
+.annotation system Ldalvik/annotation/Signature;
+    value = {
+        "Lkotlin/jvm/internal/Lambda;",
+        "Lkotlin/jvm/functions/Function0<",
+        "Lcom/google/gson/Gson;",
+        ">;"
+    }
+.end annotation
+
+.annotation runtime Lkotlin/Metadata;
+    d1 = {
+        "\u0000\u0008\n\u0000\n\u0002\u0018\u0002\n\u0000\u0010\u0000\u001a\n \u0002*\u0004\u0018\u00010\u00010\u0001H\n"
+    }
+    d2 = {
+        "<anonymous>",
+        "Lcom/google/gson/Gson;",
+        "kotlin.jvm.PlatformType"
+    }
+    k = 0x3
+    mv = {
+        0x1,
+        0x5,
+        0x1
+    }
+    xi = 0x30
+.end annotation
+
+
+# static fields
+.field public static final a:Lcom/pantanal/server/content/utils/GsonUtil$gson$2;
+
+
+# direct methods
+.method static constructor <clinit>()V
+    .locals 1
+
+    .line 1
+    new-instance v0, Lcom/pantanal/server/content/utils/GsonUtil$gson$2;
+
+    .line 2
+    .line 3
+    invoke-direct {v0}, Lcom/pantanal/server/content/utils/GsonUtil$gson$2;-><init>()V
+
+    .line 4
+    .line 5
+    .line 6
+    sput-object v0, Lcom/pantanal/server/content/utils/GsonUtil$gson$2;->a:Lcom/pantanal/server/content/utils/GsonUtil$gson$2;
+
+    .line 7
+    .line 8
+    return-void
+    .line 9
+    .line 10
+    .line 11
+    .line 12
+    .line 13
+    .line 14
+    .line 15
+    .line 16
+    .line 17
+    .line 18
+    .line 19
+    .line 20
+    .line 21
+    .line 22
+    .line 23
+    .line 24
+    .line 25
+    .line 26
+    .line 27
+    .line 28
+    .line 29
+    .line 30
+    .line 31
+    .line 32
+    .line 33
+    .line 34
+    .line 35
+.end method
+
+.method public constructor <init>()V
+    .locals 1
+
+    .line 1
+    const/4 v0, 0x0
+
+    .line 2
+    invoke-direct {p0, v0}, Lkotlin/jvm/internal/Lambda;-><init>(I)V
+
+    .line 3
+    .line 4
+    .line 5
+    return-void
+    .line 6
+    .line 7
+    .line 8
+    .line 9
+    .line 10
+    .line 11
+    .line 12
+    .line 13
+    .line 14
+    .line 15
+    .line 16
+    .line 17
+    .line 18
+    .line 19
+    .line 20
+    .line 21
+    .line 22
+    .line 23
+    .line 24
+    .line 25
+    .line 26
+    .line 27
+    .line 28
+    .line 29
+    .line 30
+    .line 31
+    .line 32
+    .line 33
+    .line 34
+    .line 35
+.end method
+
+
+# virtual methods
+.method public final invoke()Ljava/lang/Object;
+    .locals 2
+
+    .line 1
+    new-instance p0, Lcom/google/gson/GsonBuilder;
+
+    .line 2
+    .line 3
+    invoke-direct {p0}, Lcom/google/gson/GsonBuilder;-><init>()V
+
+    .line 4
+    .line 5
+    .line 6
+    new-instance v0, Lcom/pantanal/server/content/utils/ArrayMapDeserializer;
+
+    .line 7
+    .line 8
+    invoke-direct {v0}, Lcom/pantanal/server/content/utils/ArrayMapDeserializer;-><init>()V
+
+    .line 9
+    .line 10
+    .line 11
+    const-class v1, Landroid/util/ArrayMap;
+
+    .line 12
+    .line 13
+    invoke-virtual {p0, v1, v0}, Lcom/google/gson/GsonBuilder;->registerTypeAdapter(Ljava/lang/reflect/Type;Ljava/lang/Object;)Lcom/google/gson/GsonBuilder;
+
+    .line 14
+    .line 15
+    .line 16
+    invoke-virtual {p0}, Lcom/google/gson/GsonBuilder;->create()Lcom/google/gson/Gson;
+
+    .line 17
+    .line 18
+    .line 19
+    move-result-object p0
+
+    .line 20
+    return-object p0
+    .line 21
+    .line 22
+    .line 23
+    .line 24
+    .line 25
+    .line 26
+    .line 27
+    .line 28
+    .line 29
+    .line 30
+    .line 31
+    .line 32
+    .line 33
+    .line 34
+    .line 35
+.end method

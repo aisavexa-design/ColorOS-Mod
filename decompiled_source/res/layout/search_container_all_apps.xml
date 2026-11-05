@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.android.launcher3.allapps.search.LauncherAppsSearchContainerLayout android:id="@id/search_container_all_apps" android:saveEnabled="false" android:clipChildren="false" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true" android:translationZ="10.0dip" android:layout_marginHorizontal="@dimen/all_apps_container_padding_horizontal"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.android.launcher3.views.HighlightStrokeSearchBgView android:id="@id/drawer_search_container_bg" android:layout_width="fill_parent" android:layout_height="@dimen/all_apps_search_content_height">
+        <ViewStub android:id="@id/search_view_stub" android:layout="@layout/search_container_all_apps_search_view_animate" android:layout_width="0.0dip" android:layout_height="@dimen/all_apps_search_content_height" />
+    </com.android.launcher3.views.HighlightStrokeSearchBgView>
+    <com.android.launcher3.allapps.colorfilter.OplusColorFilterContainerView android:layout_gravity="end" android:id="@id/color_filter_container_view" android:focusable="true" android:visibility="gone" android:clipChildren="false" android:clipToPadding="false" android:layout_width="wrap_content" android:layout_height="@dimen/color_filter_container_view_height" android:paddingStart="@dimen/color_filter_container_view_margin_horizontal_normal_screen" android:paddingEnd="@dimen/color_filter_container_view_margin_horizontal_normal_screen" />
+</com.android.launcher3.allapps.search.LauncherAppsSearchContainerLayout>

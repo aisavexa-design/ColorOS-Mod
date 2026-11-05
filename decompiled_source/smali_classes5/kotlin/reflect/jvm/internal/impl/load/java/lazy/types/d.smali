@@ -1,0 +1,43 @@
+.class public final Lkotlin/reflect/jvm/internal/impl/load/java/lazy/types/d;
+.super Ljava/lang/Object;
+.source "JavaTypeResolver.kt"
+
+
+# static fields
+.field public static final a:Lou/c;
+
+
+# direct methods
+.method static constructor <clinit>()V
+    .locals 2
+
+    .line 1
+    new-instance v0, Lou/c;
+
+    .line 2
+    .line 3
+    const-string v1, "java.lang.Class"
+
+    .line 4
+    .line 5
+    invoke-direct {v0, v1}, Lou/c;-><init>(Ljava/lang/String;)V
+
+    .line 6
+    .line 7
+    .line 8
+    sput-object v0, Lkotlin/reflect/jvm/internal/impl/load/java/lazy/types/d;->a:Lou/c;
+
+    .line 9
+    .line 10
+    return-void
+    .line 11
+    .line 12
+    .line 13
+    .line 14
+    .line 15
+    .line 16
+    .line 17
+    .line 18
+    .line 19
+    .line 20
+.end method

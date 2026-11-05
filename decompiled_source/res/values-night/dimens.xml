@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item type="dimen" name="button_fill_alpha">0.1</item>
+    <item type="dimen" name="coui_button_press_black_alpha">0.2</item>
+    <item type="dimen" name="coui_lock_pattern_outer_circle_max_alpha">0.2</item>
+    <item type="dimen" name="coui_numeric_keyboard_dark_circle_max_alpha">0.12</item>
+    <dimen name="coui_shadow_elevation_level1">40.0dip</dimen>
+    <dimen name="coui_shadow_elevation_level2">40.0dip</dimen>
+    <dimen name="coui_shadow_elevation_level4">36.0dip</dimen>
+    <dimen name="coui_shadow_elevation_level5">60.0dip</dimen>
+    <dimen name="coui_shadow_light_r_level2">4000.0dip</dimen>
+    <dimen name="coui_shadow_light_r_level4">12000.0dip</dimen>
+    <dimen name="coui_shadow_light_r_level5">16000.0dip</dimen>
+    <dimen name="coui_shadow_light_y_level1">-1200.0dip</dimen>
+    <dimen name="coui_shadow_light_y_level2">-1200.0dip</dimen>
+    <dimen name="coui_shadow_light_y_level3a">-240.0dip</dimen>
+    <dimen name="coui_shadow_light_y_level4">-1500.0dip</dimen>
+    <dimen name="coui_shadow_light_y_level5">-800.0dip</dimen>
+</resources>

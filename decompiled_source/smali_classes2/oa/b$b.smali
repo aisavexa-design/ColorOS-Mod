@@ -1,0 +1,19 @@
+.class public interface abstract Loa/b$b;
+.super Ljava/lang/Object;
+.source "RusBaseConfigManager.kt"
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Loa/b;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x609
+    name = "b"
+.end annotation
+
+
+# virtual methods
+.method public abstract onRusConfigChanged()V
+.end method

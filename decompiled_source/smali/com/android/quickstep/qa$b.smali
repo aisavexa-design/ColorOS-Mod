@@ -1,0 +1,182 @@
+.class public interface abstract Lcom/android/quickstep/qa$b;
+.super Ljava/lang/Object;
+.source "SwipeUpAnimationLogic.java"
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Lcom/android/quickstep/qa;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x609
+    name = "b"
+.end annotation
+
+
+# direct methods
+.method public static a(Lha/q1$c;)Lcom/android/quickstep/ta;
+    .locals 1
+
+    .line 1
+    new-instance v0, Lcom/android/quickstep/ta;
+
+    .line 2
+    .line 3
+    invoke-direct {v0, p0}, Lcom/android/quickstep/ta;-><init>(Lha/q1$c;)V
+
+    .line 4
+    .line 5
+    .line 6
+    return-object v0
+    .line 7
+    .line 8
+    .line 9
+    .line 10
+    .line 11
+    .line 12
+    .line 13
+    .line 14
+    .line 15
+    .line 16
+    .line 17
+    .line 18
+    .line 19
+    .line 20
+    .line 21
+    .line 22
+    .line 23
+.end method
+
+.method public static b(Lcom/android/quickstep/util/b;)Lcom/android/quickstep/sa;
+    .locals 1
+
+    .line 1
+    new-instance v0, Lcom/android/quickstep/sa;
+
+    .line 2
+    .line 3
+    invoke-direct {v0, p0}, Lcom/android/quickstep/sa;-><init>(Lcom/android/quickstep/util/b;)V
+
+    .line 4
+    .line 5
+    .line 6
+    return-object v0
+    .line 7
+    .line 8
+    .line 9
+    .line 10
+    .line 11
+    .line 12
+    .line 13
+    .line 14
+    .line 15
+    .line 16
+    .line 17
+    .line 18
+    .line 19
+    .line 20
+    .line 21
+    .line 22
+    .line 23
+.end method
+
+.method public static c(Lcom/android/quickstep/util/animation/CustomRectFSpringAnim;)Lcom/android/quickstep/ua;
+    .locals 1
+
+    .line 1
+    new-instance v0, Lcom/android/quickstep/ua;
+
+    .line 2
+    .line 3
+    invoke-direct {v0, p0}, Lcom/android/quickstep/ua;-><init>(Lcom/android/quickstep/util/animation/CustomRectFSpringAnim;)V
+
+    .line 4
+    .line 5
+    .line 6
+    return-object v0
+    .line 7
+    .line 8
+    .line 9
+    .line 10
+    .line 11
+    .line 12
+    .line 13
+    .line 14
+    .line 15
+    .line 16
+    .line 17
+    .line 18
+    .line 19
+    .line 20
+    .line 21
+    .line 22
+    .line 23
+.end method
+
+.method public static d(Landroid/animation/AnimatorSet;)Lcom/android/quickstep/ra;
+    .locals 1
+
+    .line 1
+    new-instance v0, Lcom/android/quickstep/ra;
+
+    .line 2
+    .line 3
+    invoke-direct {v0, p0}, Lcom/android/quickstep/ra;-><init>(Landroid/animation/AnimatorSet;)V
+
+    .line 4
+    .line 5
+    .line 6
+    return-object v0
+    .line 7
+    .line 8
+    .line 9
+    .line 10
+    .line 11
+    .line 12
+    .line 13
+    .line 14
+    .line 15
+    .line 16
+    .line 17
+    .line 18
+    .line 19
+    .line 20
+    .line 21
+    .line 22
+    .line 23
+.end method
+
+
+# virtual methods
+.method public abstract cancel()V
+.end method
+
+.method public e()V
+    .locals 0
+
+    .line 1
+    return-void
+    .line 2
+    .line 3
+    .line 4
+    .line 5
+    .line 6
+    .line 7
+    .line 8
+    .line 9
+    .line 10
+    .line 11
+    .line 12
+    .line 13
+    .line 14
+    .line 15
+    .line 16
+    .line 17
+    .line 18
+    .line 19
+    .line 20
+.end method
+
+.method public abstract end()V
+.end method

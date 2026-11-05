@@ -1,0 +1,161 @@
+.class public final Lcom/android/launcher3/taskbar/OplusTaskbarView$replaceItems$1;
+.super Landroid/animation/AnimatorListenerAdapter;
+.source "OplusTaskbarView.kt"
+
+
+# instance fields
+.field final synthetic this$0:Lcom/android/launcher3/taskbar/OplusTaskbarView;
+
+
+# direct methods
+.method public constructor <init>(Lcom/android/launcher3/taskbar/OplusTaskbarView;)V
+    .locals 0
+
+    .line 1
+    iput-object p1, p0, Lcom/android/launcher3/taskbar/OplusTaskbarView$replaceItems$1;->this$0:Lcom/android/launcher3/taskbar/OplusTaskbarView;
+
+    .line 2
+    .line 3
+    invoke-direct {p0}, Landroid/animation/AnimatorListenerAdapter;-><init>()V
+
+    .line 4
+    .line 5
+    .line 6
+    return-void
+    .line 7
+    .line 8
+    .line 9
+    .line 10
+    .line 11
+    .line 12
+    .line 13
+    .line 14
+    .line 15
+    .line 16
+    .line 17
+    .line 18
+    .line 19
+    .line 20
+    .line 21
+    .line 22
+    .line 23
+.end method
+
+
+# virtual methods
+.method public final onAnimationCancel(Landroid/animation/Animator;)V
+    .locals 1
+
+    .line 1
+    const-string v0, "animation"
+
+    .line 2
+    .line 3
+    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+
+    .line 4
+    .line 5
+    .line 6
+    invoke-super {p0, p1}, Landroid/animation/AnimatorListenerAdapter;->onAnimationCancel(Landroid/animation/Animator;)V
+
+    .line 7
+    .line 8
+    .line 9
+    return-void
+    .line 10
+    .line 11
+    .line 12
+    .line 13
+    .line 14
+    .line 15
+    .line 16
+    .line 17
+    .line 18
+    .line 19
+    .line 20
+    .line 21
+    .line 22
+    .line 23
+.end method
+
+.method public final onAnimationEnd(Landroid/animation/Animator;)V
+    .locals 1
+
+    .line 1
+    const-string v0, "animation"
+
+    .line 2
+    .line 3
+    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+
+    .line 4
+    .line 5
+    .line 6
+    invoke-super {p0, p1}, Landroid/animation/AnimatorListenerAdapter;->onAnimationEnd(Landroid/animation/Animator;)V
+
+    .line 7
+    .line 8
+    .line 9
+    sget-object p1, Lcom/oplus/quickstep/utils/TracePrintUtil$Type;->g1:Lcom/oplus/quickstep/utils/TracePrintUtil$Type;
+
+    .line 10
+    .line 11
+    invoke-static {p1}, Lcom/oplus/quickstep/utils/TracePrintUtil;->c(Lcom/oplus/quickstep/utils/TracePrintUtil$Type;)V
+
+    .line 12
+    .line 13
+    .line 14
+    iget-object p0, p0, Lcom/android/launcher3/taskbar/OplusTaskbarView$replaceItems$1;->this$0:Lcom/android/launcher3/taskbar/OplusTaskbarView;
+
+    .line 15
+    .line 16
+    invoke-static {p0}, Lcom/android/launcher3/taskbar/OplusTaskbarView;->access$updateTaskbarItemsCount(Lcom/android/launcher3/taskbar/OplusTaskbarView;)V
+
+    .line 17
+    .line 18
+    .line 19
+    return-void
+    .line 20
+    .line 21
+    .line 22
+    .line 23
+.end method
+
+.method public final onAnimationStart(Landroid/animation/Animator;)V
+    .locals 1
+
+    .line 1
+    const-string v0, "animation"
+
+    .line 2
+    .line 3
+    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+
+    .line 4
+    .line 5
+    .line 6
+    invoke-super {p0, p1}, Landroid/animation/AnimatorListenerAdapter;->onAnimationStart(Landroid/animation/Animator;)V
+
+    .line 7
+    .line 8
+    .line 9
+    sget-object p0, Lcom/oplus/quickstep/utils/TracePrintUtil$Type;->g1:Lcom/oplus/quickstep/utils/TracePrintUtil$Type;
+
+    .line 10
+    .line 11
+    invoke-static {p0}, Lcom/oplus/quickstep/utils/TracePrintUtil;->a(Lcom/oplus/quickstep/utils/TracePrintUtil$Type;)V
+
+    .line 12
+    .line 13
+    .line 14
+    return-void
+    .line 15
+    .line 16
+    .line 17
+    .line 18
+    .line 19
+    .line 20
+    .line 21
+    .line 22
+    .line 23
+.end method

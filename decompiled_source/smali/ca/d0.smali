@@ -1,0 +1,42 @@
+.class public final synthetic Lca/d0;
+.super Ljava/lang/Object;
+.source "R8$$SyntheticClass"
+
+# interfaces
+.implements Ljava/lang/Runnable;
+
+
+# virtual methods
+.method public final run()V
+    .locals 1
+
+    .line 1
+    invoke-static {}, Lcom/oplus/zoomwindow/OplusZoomWindowManager;->getInstance()Lcom/oplus/zoomwindow/OplusZoomWindowManager;
+
+    .line 2
+    .line 3
+    .line 4
+    move-result-object p0
+
+    .line 5
+    const/16 v0, 0xc
+
+    .line 6
+    .line 7
+    invoke-virtual {p0, v0}, Lcom/oplus/zoomwindow/OplusZoomWindowManager;->hideZoomWindow(I)V
+
+    .line 8
+    .line 9
+    .line 10
+    return-void
+    .line 11
+    .line 12
+    .line 13
+    .line 14
+    .line 15
+    .line 16
+    .line 17
+    .line 18
+    .line 19
+    .line 20
+.end method

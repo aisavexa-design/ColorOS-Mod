@@ -1,0 +1,109 @@
+.class public interface abstract Lcom/android/launcher3/folder/IFolderExt;
+.super Ljava/lang/Object;
+.source "IFolderExt.java"
+
+
+# virtual methods
+.method public abstract addDragScrollerTarget()V
+.end method
+
+.method public abstract addInScreen(Landroid/view/View;Ljava/lang/String;)V
+.end method
+
+.method public abstract animateDot()V
+.end method
+
+.method public abstract clearChildTempState()V
+.end method
+
+.method public abstract clearOffPageIconSpringsOnOpen()V
+.end method
+
+.method public abstract closeCompleteEntryPoint()V
+.end method
+
+.method public abstract closeCompleteExitPoint()V
+.end method
+
+.method public abstract doAnimBoosterEnd()V
+.end method
+
+.method public abstract doFolderOpenAnimStart()V
+.end method
+
+.method public abstract doUIFirst(Landroid/animation/Animator;)V
+.end method
+
+.method public abstract enableFeatureTraceLauncherLayout(Lcom/android/launcher3/DropTarget$DragObject;)V
+.end method
+
+.method public abstract fadeGaussianBlurState(ZZ)V
+.end method
+
+.method public abstract folderAnimStartEntryPoint()V
+.end method
+
+.method public abstract getContentBackground()Landroid/widget/ImageView;
+.end method
+
+.method public abstract getFolderAnimator(Z)Landroid/animation/Animator;
+.end method
+
+.method public abstract getHostView()Lcom/android/launcher3/folder/Folder;
+.end method
+
+.method public abstract isAnimating()Z
+.end method
+
+.method public abstract isFolderRealOpened()Z
+.end method
+
+.method public abstract isOpenedOrAnimating()Z
+.end method
+
+.method public abstract mapOverItemsSpecialForCurrentPageItem(ZLcom/android/launcher3/OplusWorkspace$ItemOperatorWithAnimatingParam;)V
+.end method
+
+.method public abstract onDragExitExitPoint()V
+.end method
+
+.method public abstract onDragStartExitPoint()V
+.end method
+
+.method public abstract onFinishInflateEntryPoint()V
+.end method
+
+.method public abstract onFolderOpenAnimCancelPoint()V
+.end method
+
+.method public abstract onFolderOpenAnimationEnd(Z)V
+.end method
+
+.method public abstract reLayoutChildren()V
+.end method
+
+.method public abstract resetFolderAnimator()V
+.end method
+
+.method public abstract setFolderRealOpened(Z)V
+.end method
+
+.method public abstract setInSpringAnim()V
+.end method
+
+.method public abstract showItems(Ljava/util/List;)V
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Ljava/util/List<",
+            "Lcom/android/launcher3/model/data/WorkspaceItemInfo;",
+            ">;)V"
+        }
+    .end annotation
+.end method
+
+.method public abstract startDragLayerAnimation(ZZ)V
+.end method
+
+.method public abstract updateDoteState()V
+.end method

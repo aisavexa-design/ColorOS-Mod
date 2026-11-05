@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <FrameLayout android:id="@id/color_preference_header" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="@dimen/preference_headerView_height"
+          xmlns:android="http://schemas.android.com/apk/res/android" />
+        <include layout="@layout/launcher_fallen_choice_layout" />
+        <FrameLayout android:id="@android:id/list_container" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" />
+    </LinearLayout>
+    <TextView android:gravity="center" android:id="@android:id/empty" android:padding="8.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <include layout="@layout/appbar_with_divider_layout" />
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

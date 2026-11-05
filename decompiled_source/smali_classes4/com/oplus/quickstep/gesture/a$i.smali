@@ -1,0 +1,121 @@
+.class public final Lcom/oplus/quickstep/gesture/a$i;
+.super Ljava/lang/Object;
+.source "OplusBaseSwipeUpHandler.kt"
+
+# interfaces
+.implements Ljava/util/function/Predicate;
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingMethod;
+    value = Lcom/oplus/quickstep/gesture/a;->w(Landroid/graphics/PointF;FZZ)Lcom/android/quickstep/GestureState$GestureEndTarget;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x19
+    name = null
+.end annotation
+
+.annotation system Ldalvik/annotation/Signature;
+    value = {
+        "Ljava/lang/Object;",
+        "Ljava/util/function/Predicate<",
+        "Lcom/oplus/quickstep/gesture/a<",
+        "TT;TQ;TS;>;>;"
+    }
+.end annotation
+
+
+# virtual methods
+.method public final test(Ljava/lang/Object;)Z
+    .locals 1
+
+    .line 1
+    check-cast p1, Lcom/oplus/quickstep/gesture/a;
+
+    .line 2
+    .line 3
+    const-string p0, "swipeupHandler"
+
+    .line 4
+    .line 5
+    invoke-static {p1, p0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+
+    .line 6
+    .line 7
+    .line 8
+    iget-object p0, p1, Lcom/android/quickstep/v0;->S:Lcom/android/quickstep/views/RecentsView;
+
+    .line 9
+    .line 10
+    instance-of v0, p0, Lcom/android/quickstep/views/OplusRecentsViewImpl;
+
+    .line 11
+    .line 12
+    if-eqz v0, :cond_0
+
+    .line 13
+    .line 14
+    check-cast p0, Lcom/android/quickstep/views/OplusRecentsViewImpl;
+
+    .line 15
+    .line 16
+    goto :goto_0
+
+    .line 17
+    :cond_0
+    const/4 p0, 0x0
+
+    .line 18
+    :goto_0
+    invoke-static {p0, p1}, Lcom/oplus/quickstep/panorama/a;->q(Lcom/android/quickstep/views/OplusRecentsViewImpl;Lcom/oplus/quickstep/gesture/a;)Z
+
+    .line 19
+    .line 20
+    .line 21
+    move-result p0
+
+    .line 22
+    if-eqz p0, :cond_1
+
+    .line 23
+    .line 24
+    iget-object p0, p1, Lcom/oplus/quickstep/gesture/a;->A1:Lqi/f;
+
+    .line 25
+    .line 26
+    if-eqz p0, :cond_1
+
+    .line 27
+    .line 28
+    const/4 p0, 0x1
+
+    .line 29
+    goto :goto_1
+
+    .line 30
+    :cond_1
+    const/4 p0, 0x0
+
+    .line 31
+    :goto_1
+    return p0
+    .line 32
+    .line 33
+    .line 34
+    .line 35
+    .line 36
+    .line 37
+    .line 38
+    .line 39
+    .line 40
+    .line 41
+    .line 42
+    .line 43
+    .line 44
+    .line 45
+    .line 46
+    .line 47
+    .line 48
+    .line 49
+.end method

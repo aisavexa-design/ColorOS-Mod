@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape android:shape="rectangle"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <smooth-rect />
+    <corners android:radius="@dimen/widget_popup_row_section_widget_bg_radius" />
+    <solid android:color="@color/toggle_bar_widget_list_item_widget_bg" />
+    <stroke android:width="0.33000004dip" android:color="@color/toggle_bar_widget_list_item_widget_bg_stroke" />
+    <padding android:left="0.33000004dip" android:top="0.33000004dip" android:right="0.33000004dip" android:bottom="0.33000004dip" />
+</shape>

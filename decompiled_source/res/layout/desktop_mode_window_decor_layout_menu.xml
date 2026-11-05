@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.android.wm.shell.windowdecor.CaptionMenuLayout android:orientation="vertical" android:id="@id/layout_menu" android:clipToPadding="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:paddingHorizontal="2.0dip" android:paddingVertical="2.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="horizontal" android:id="@id/container" android:background="@drawable/desktop_mode_layout_menu_background" android:layout_width="wrap_content" android:layout_height="wrap_content" android:measureWithLargestChild="true" android:elevation="1.0dip" android:paddingHorizontal="12.0dip" android:paddingVertical="16.0dip">
+        <include layout="@layout/desktop_mode_window_decor_resize_controls" />
+    </LinearLayout>
+    <com.android.wm.shell.windowdecor.WindowingPillView android:gravity="center_vertical" android:layout_gravity="center_horizontal" android:orientation="horizontal" android:id="@id/windowing_pill" android:background="@drawable/desktop_mode_layout_menu_pill_background" android:layout_width="fill_parent" android:layout_height="@dimen/desktop_mode_layout_menu_windowing_pill_height" android:layout_marginTop="@dimen/desktop_mode_layout_menu_pill_spacing_margin" android:elevation="1.0dip" />
+</com.android.wm.shell.windowdecor.CaptionMenuLayout>

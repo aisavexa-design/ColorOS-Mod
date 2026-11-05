@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector android:height="328.0dip" android:width="328.0dip" android:viewportWidth="328.0" android:viewportHeight="328.0"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:aapt="http://schemas.android.com/aapt">
+    <group>
+        <clip-path android:pathData="M0,0h328v328h-328z" />
+        <path android:fillColor="@drawable/$fallback_card_bg__0" android:pathData="M0,0h328v328h-328z" />
+        <path android:fillColor="@drawable/$fallback_card_bg__1" android:pathData="M24,0L304,0A24,24 0,0 1,328 24L328,304A24,24 0,0 1,304 328L24,328A24,24 0,0 1,0 304L0,24A24,24 0,0 1,24 0z" />
+    </group>
+</vector>

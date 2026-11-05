@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="abc_slice_duration_days">
+        <item quantity="other">%d gg fa</item>
+        <item quantity="one">%d g fa</item>
+    </plurals>
+    <plurals name="abc_slice_duration_min">
+        <item quantity="other">%d min fa</item>
+        <item quantity="one">%d min fa</item>
+    </plurals>
+    <plurals name="abc_slice_duration_years">
+        <item quantity="other">%d anni fa</item>
+        <item quantity="one">%d anno fa</item>
+    </plurals>
+    <plurals name="card_drag_sufficient_tip_plurals">
+        <item quantity="other">Impossibile aggiungere più di %1$d widget identici</item>
+        <item quantity="one">Impossibile aggiungere più di %1$d widget identico</item>
+    </plurals>
+    <plurals name="coui_page_indicator_description">
+        <item quantity="other">Pagina %1$d di %2$d</item>
+        <item quantity="one">Pagina %1$d di %2$d</item>
+    </plurals>
+    <plurals name="delet_alert_popup_message">
+        <item quantity="other">"Le app selezionate scompariranno dalla schermata iniziale ma saranno conservate nell'app drawer."</item>
+        <item quantity="one">"Questa app scomparirà dalla schermata iniziale ma rimarrà nell'app drawer."</item>
+    </plurals>
+    <plurals name="delet_multi_alert_popup_title">
+        <item quantity="other">Rimuovere %d app?</item>
+        <item quantity="one">Rimuovere %d app?</item>
+    </plurals>
+    <plurals name="delet_multi_apps_and_deep_shortcuts_alert_popup_message">
+        <item quantity="other">Le app selezionate scompariranno dalla Schermata iniziale ma rimarranno nel menu app. Le scorciatoie selezionate verranno rimosse.</item>
+        <item quantity="one">Le app selezionate scompariranno dalla Schermata iniziale ma rimarranno nel menu app. Le scorciatoie selezionate verranno rimosse.</item>
+    </plurals>
+    <plurals name="delet_multi_apps_and_deep_shortcuts_alert_popup_title">
+        <item quantity="other">Rimuovere le %d app o scorciatoie selezionate?</item>
+        <item quantity="one">Rimuovere %d app o scorciatoia selezionata?</item>
+    </plurals>
+    <plurals name="delete_icon_panel_main_title_plurals">
+        <item quantity="other">Desideri rimuovere le scorciatoie %1$d seguenti?</item>
+        <item quantity="one">Desideri rimuovere la scorciatoia %1$d seguente?</item>
+    </plurals>
+    <plurals name="delete_icon_panel_sub_title_plurals">
+        <item quantity="other">Rimuovi %1$d scorciatoie</item>
+        <item quantity="one">Rimuovi %1$d scorciatoia</item>
+    </plurals>
+    <plurals name="mtrl_badge_content_description">
+        <item quantity="other">%d nuove notifiche</item>
+        <item quantity="one">%d nuova notifica</item>
+    </plurals>
+    <plurals name="page_preview_title_plurals">
+        <item quantity="other">%1$d selezionati</item>
+        <item quantity="one">%1$d selezionato</item>
+    </plurals>
+    <plurals name="powers_day">
+        <item quantity="other">%1$d giorni</item>
+        <item quantity="one">%1$d giorno</item>
+    </plurals>
+    <plurals name="red_dot_with_number_description">
+        <item quantity="other">%d nuove notifiche</item>
+        <item quantity="one">%d nuova notifica</item>
+    </plurals>
+    <plurals name="toggle_bar_layout_dialog_rv_item_title">
+        <item quantity="other">%1$d colonne</item>
+        <item quantity="one">%1$d colonna</item>
+    </plurals>
+    <plurals name="uninstall_panel_apps_title_plurals">
+        <item quantity="other">Desideri disinstallare le app %1$d seguenti?</item>
+        <item quantity="one">"Desideri disinstallare l'app %1$d seguente?"</item>
+    </plurals>
+    <plurals name="uninstall_panel_sub_title_for_multi_app_plurals">
+        <item quantity="other">Disinstalla %1$d app (inclusi i loro cloni) e cancella i loro dati.</item>
+        <item quantity="one">"Disinstalla l'app %1$d (incluso il suo clone) e cancella i suoi dati."</item>
+    </plurals>
+    <plurals name="uninstall_panel_sub_title_plurals">
+        <item quantity="other">Disinstalla %1$d app e elimina i loro dati.</item>
+        <item quantity="one">Disinstalla %1$d app e elimina i suoi dati.</item>
+    </plurals>
+</resources>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="coui_action_menu_item_min_width">40.0dip</dimen>
+    <dimen name="coui_actionbar_menuitemview_item_spacing">10.0dip</dimen>
+    <dimen name="coui_toolbar_gap_between_navigation_and_title">10.0dip</dimen>
+    <dimen name="toolbar_center_menu_padding_horizontal_compat">16.0dip</dimen>
+    <dimen name="toolbar_center_menu_padding_horizontal_expanded">40.0dip</dimen>
+    <dimen name="toolbar_center_menu_padding_horizontal_medium">24.0dip</dimen>
+</resources>

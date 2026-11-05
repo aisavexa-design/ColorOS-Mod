@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.preference.PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.preference.Preference android:layout="@layout/oplus_preference_header" android:selectable="false" />
+    <com.coui.appcompat.preference.COUIPreferenceCategory android:enabled="true" android:key="key_category_launcher_qsb_hint" app:isFirstCategory="true">
+        <com.android.launcher.settings.LauncherQsbHintPreference android:persistent="false" android:key="key_launcher_qsb_hint" />
+    </com.coui.appcompat.preference.COUIPreferenceCategory>
+    <com.coui.appcompat.preference.COUIPreferenceCategory android:key="key_category_launcher_qsb_switch" app:isFirstCategory="true">
+        <com.coui.appcompat.preference.COUISwitchPreference android:title="@string/launcher_dock_search_for_qsb_switch" android:key="key_launcher_qsb_switch" />
+    </com.coui.appcompat.preference.COUIPreferenceCategory>
+    <com.coui.appcompat.preference.COUIPreferenceCategory android:key="key_category_launcher_qsb_custom" app:isFirstCategory="true">
+        <com.coui.appcompat.preference.COUIJumpPreference android:persistent="true" android:title="@string/launcher_dock_search_for_qsb_custom" android:key="key_launcher_qsb_custom" android:order="1" />
+    </com.coui.appcompat.preference.COUIPreferenceCategory>
+</androidx.preference.PreferenceScreen>

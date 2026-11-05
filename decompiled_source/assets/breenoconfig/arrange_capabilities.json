@@ -1,0 +1,129 @@
+{
+  "invokeCaps": [
+    {
+      "id": "1002754",
+      "key": "com.android.launcher.align_desktop_page_app_icon",
+      "packageName": "com.android.launcher",
+      "name": "桌面页面的元素对齐",
+      "version": "1.0.0",
+      "versionCode": "1000000",
+      "tags": [
+        "桌面",
+        "桌面页面的元素对齐对齐桌面页面应用"
+      ],
+      "description": "可以帮用户把桌面某一页的元素进行对齐整理",
+      "invoke": {
+        "protocol": {
+          "type": "ApiProxy",
+          "apiType": "ANDROID_CONTENT_PROVIDER",
+          "attributes": {
+            "authority": "com.android.launcher.LauncherBreenoProvider",
+            "type": "CALL",
+            "id": "",
+            "method": "align_desktop_page_app_icon",
+            "permission": "com.oplus.permission.safe.ASSISTANT"
+          }
+        },
+        "inputParams": [
+          {
+            "key": "align_type",
+            "type": "string",
+            "required": false,
+            "description": "桌面页面的元素对齐对齐桌面页面应用类型，取值限定值为[桌面对齐的类型,取值范围包括【向上对齐,向下对齐】,可为空]，可缺失。",
+            "name": "对齐类型",
+            "askAnswer": ""
+          }
+        ],
+        "protocolVariants": []
+      }
+    },
+    {
+      "id": "1002755",
+      "key": "com.android.launcher.revert_to_previous_launcher_layout",
+      "packageName": "com.android.launcher",
+      "name": "恢复上一个桌面布局",
+      "version": "1.0.0",
+      "versionCode": "1000000",
+      "tags": [
+        "桌面",
+        "恢复上一个桌面布局"
+      ],
+      "description": "这个功能可以帮用户把当前桌面布局恢复为上一次的布局",
+      "invoke": {
+        "protocol": {
+          "type": "ApiProxy",
+          "apiType": "ANDROID_CONTENT_PROVIDER",
+          "attributes": {
+            "authority": "com.android.launcher.LauncherBreenoProvider",
+            "type": "CALL",
+            "method": "revert_to_previous_launcher_layout",
+            "permission": "com.oplus.permission.safe.ASSISTANT"
+          }
+        },
+        "protocolVariants": []
+      }
+    },
+    {
+      "id": "1002756",
+      "key": "com.android.launcher.arrange_launcher_app_icon",
+      "packageName": "com.android.launcher",
+      "name": "桌面整理",
+      "version": "1.0.0",
+      "versionCode": "1000000",
+      "tags": [
+        "桌面",
+        "整理桌面应用"
+      ],
+      "description": "桌面快捷整理功能，支持按照应用、颜色的方式进行分类整理",
+      "invoke": {
+        "protocol": {
+          "type": "ApiProxy",
+          "apiType": "ANDROID_CONTENT_PROVIDER",
+          "attributes": {
+            "authority": "com.android.launcher.LauncherBreenoProvider",
+            "type": "CALL",
+            "method": "arrange_launcher_app_icon",
+            "permission": "com.oplus.permission.safe.ASSISTANT"
+          }
+        },
+        "inputParams": [
+          {
+            "key": "arrange_type",
+            "type": "string",
+            "required": false,
+            "description": "整理桌面应用类型，取值限定值为[整理桌面应用的类型,取值范围包括【类型,颜色】,可为空]，可缺失。",
+            "name": "整理类型",
+            "askAnswer": ""
+          }
+        ],
+        "protocolVariants": []
+      }
+    },
+    {
+      "id": "1002758",
+      "key": "com.android.launcher.query_launcher_history_layout",
+      "packageName": "com.android.launcher",
+      "name": "查询历史布局",
+      "version": "1.0.0",
+      "versionCode": "1000000",
+      "tags": [
+        "桌面",
+        "查看桌面历史布局"
+      ],
+      "description": "这个功能可以帮用户查看桌面历史布局",
+      "invoke": {
+        "protocol": {
+          "type": "ApiProxy",
+          "apiType": "ANDROID_CONTENT_PROVIDER",
+          "attributes": {
+            "authority": "com.android.launcher.LauncherBreenoProvider",
+            "type": "CALL",
+            "method": "query_launcher_history_layout",
+            "permission": "com.oplus.permission.safe.ASSISTANT"
+          }
+        },
+        "protocolVariants": []
+      }
+    }
+  ]
+}

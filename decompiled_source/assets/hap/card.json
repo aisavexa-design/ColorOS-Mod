@@ -1,0 +1,30 @@
+{
+  "platform": "com.nearme.instant.platform",
+  "featureBlacklist": [],
+  "componentBlacklist": [
+    {
+      "name": "refresh"
+    },
+    {
+      "name": "richtext"
+    },
+    {
+      "name": "tabs"
+    },
+    {
+      "name": "tab-bar"
+    },
+    {
+      "name": "tab-content"
+    },
+    {
+      "name": "web"
+    },
+    {
+      "name": "canvas"
+    },
+    {
+      "name": "map"
+    }
+  ]
+}
