@@ -27,8 +27,8 @@ jobs:
 
       - name: Build APK
         run: |
-          echo "Recompiling APK from source..."
-          apktool b decompiled_source -o ColorOS_Launcher_Mod.apk
+          echo "Recompiling APK with AAPT2..."
+          apktool b --use-aapt2 decompiled_source -o ColorOS_Launcher_Mod.apk
 
       - name: Download Uber APK Signer
         run: |
