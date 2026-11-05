@@ -25,10 +25,25 @@ jobs:
           sudo apt-get update
           sudo apt-get install -y apktool wget
 
+      - name: Download Original APK
+        run: |
+          echo "Downloading original APK..."
+          wget -O original_launcher.apk https://github.com/aisavexa-design/ColorOS-Mod/releases/download/v1.0/System.Launcher_17.3.12.apk
+
+      - name: Decompile without Resources (-r)
+        run: |
+          echo "Decompiling without resources to bypass AAPT2 error..."
+          apktool d -r -f original_launcher.apk -o safe_build_folder
+          
+      - name: Inject Edited Manifest
+        run: |
+          echo "Copying your edited AndroidManifest.xml..."
+          cp decompiled_source/AndroidManifest.xml safe_build_folder/AndroidManifest.xml
+
       - name: Build APK
         run: |
-          echo "Recompiling APK with AAPT2..."
-          apktool b --use-aapt2 decompiled_source -o ColorOS_Launcher_Mod.apk
+          echo "Building safe APK..."
+          apktool b safe_build_folder -o ColorOS_Launcher_Mod.apk
 
       - name: Download Uber APK Signer
         run: |
