@@ -20,16 +20,17 @@ jobs:
           distribution: 'zulu'
           java-version: '17'
 
-      - name: Download Latest Apktool
+      - name: Install Apktool
         run: |
-          wget -O apktool.jar https://bitbucket.org/iBotPeaches/apktool/downloads/apktool_2.10.0.jar
+          sudo apt-get update
+          sudo apt-get install -y apktool wget
 
       - name: Fix Dollar ($) Resource Names
         run: |
           echo "Fixing invalid $ filenames in res folder..."
           cd decompiled_source/res
           
-          # 1. Jin files ke naam mein '$' hai, unko '_' se rename karna
+          # 1. Rename files containing '$' to '_'
           find . -depth -name '*$*' | while IFS= read -r file; do
             dir=$(dirname "$file")
             base=$(basename "$file")
@@ -37,13 +38,13 @@ jobs:
             mv "$file" "$dir/$newbase"
           done
           
-          # 2. Sabhi XML files ke andar jahan '$drawable_name' likha hai, wahan bhi '_' karna
+          # 2. Replace '$' with '_' inside XML resource references
           find . -type f -name "*.xml" -exec sed -i 's/\$/_/g' {} +
 
       - name: Build APK
         run: |
-          echo "Building APK with Latest Apktool..."
-          java -jar apktool.jar b --use-aapt2 decompiled_source -o ColorOS_Launcher_Mod.apk
+          echo "Building APK..."
+          apktool b decompiled_source -o ColorOS_Launcher_Mod.apk
 
       - name: Download Uber APK Signer
         run: |
