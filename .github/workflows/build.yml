@@ -20,34 +20,33 @@ jobs:
           distribution: 'zulu'
           java-version: '17'
 
-      - name: Install Apktool
+      - name: Download Latest Apktool
         run: |
-          sudo apt-get update
-          sudo apt-get install -y apktool wget
+          wget -O apktool.jar https://bitbucket.org/iBotPeaches/apktool/downloads/apktool_2.10.0.jar
 
-      - name: Download Original APK
+      - name: Fix Dollar ($) Resource Names
         run: |
-          echo "Downloading original APK..."
-          wget -O original_launcher.apk https://github.com/aisavexa-design/ColorOS-Mod/releases/download/v1.0/System.Launcher_17.3.12.apk
-
-      - name: Decompile without Resources (-r)
-        run: |
-          echo "Decompiling without resources to bypass AAPT2 error..."
-          apktool d -r -f original_launcher.apk -o safe_build_folder
+          echo "Fixing invalid $ filenames in res folder..."
+          cd decompiled_source/res
           
-      - name: Inject Edited Manifest
-        run: |
-          echo "Copying your edited AndroidManifest.xml..."
-          cp decompiled_source/AndroidManifest.xml safe_build_folder/AndroidManifest.xml
+          # 1. Jin files ke naam mein '$' hai, unko '_' se rename karna
+          find . -depth -name '*$*' | while IFS= read -r file; do
+            dir=$(dirname "$file")
+            base=$(basename "$file")
+            newbase=$(echo "$base" | tr '$' '_')
+            mv "$file" "$dir/$newbase"
+          done
+          
+          # 2. Sabhi XML files ke andar jahan '$drawable_name' likha hai, wahan bhi '_' karna
+          find . -type f -name "*.xml" -exec sed -i 's/\$/_/g' {} +
 
       - name: Build APK
         run: |
-          echo "Building safe APK..."
-          apktool b safe_build_folder -o ColorOS_Launcher_Mod.apk
+          echo "Building APK with Latest Apktool..."
+          java -jar apktool.jar b --use-aapt2 decompiled_source -o ColorOS_Launcher_Mod.apk
 
       - name: Download Uber APK Signer
         run: |
-          echo "Downloading signing tool..."
           wget https://github.com/patrickfav/uber-apk-signer/releases/download/v1.3.0/uber-apk-signer-1.3.0.jar
 
       - name: Sign APK
